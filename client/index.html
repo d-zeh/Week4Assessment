@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+
+    <style>
+      .floatingBox {
+        width: 450px;
+        border: 2px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+        float: right;
+        margin-right: 20px;
+        background-color: aliceblue;
+      }
+      .lookup-floatingBox {
+        float: bottom left;
+        position: fixed;
+        bottom: 1vh;
+        left: 1vh;
+        width: 200px;
+        border: 2px solid black;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        background-color: aliceblue;
+      }
+      .floatingBox2 {
+        width: 150px;
+        border: 2px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+        float: right;
+        margin-right: 20px;
+        background-color: aliceblue;
+      }
+      .response-area {
+        width: 150px;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+    background-color: aliceblue;
+}
+    </style>
+
+  </head>
+  <body class="container" background="https://img.freepik.com/premium-photo/barbie-doll-with-pink-hair-is-shown-with-pink-hat_802234-1119.jpg">
+
+    <button id="complimentButton">Get a compliment</button>
+    <button id="zoltar">BEHOLD THE POWER OF ZOLTAR</button>
+
+
+    <div class = "floatingBox" id="addGarmet">
+      Item Adder <br><br>
+      <label for="garmet_name"> Garmet Name: </label>
+      <input type="text" name="garmet_name" id="addGarmet-garmet_name" required><br><br>
+
+      <label for="size"> Size: </label>
+      <select id="addGarmet-size" name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="x-small">X-Small</option>
+        <option value="x-large">X-Large</option>
+      </select>
+
+      <label for="season"> Season: </label>
+      <select id="addGarmet-season" name="season">
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="fall">Fall</option>
+        <option value="winter">Winter</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="department"> Dept: </label>
+      <select id="addGarmet-dept" name="department">
+        <option value="women">Women</option>
+        <option value="men">Men</option>
+        <option value="girls">Girls</option>
+        <option value="boys">Boys</option>
+        <option value="non-gender">Non-Binary</option>
+        <option value="infant">Infant</option>
+      </select>
+      <br><br>
+
+      <label for="selling"> Selling Price: </label>
+      <input type=text" name="selling" id="addGarmet-selling"><br><br>
+
+      <label for="purchased"> Purchase Price: </label>
+      <input type=text" name="purchased" id="addGarmet-purchased" required><br><br>
+
+      <label for="aquired"> Aquired From: </label>
+      <input type=text" name="aquired" id="addGarmet-aquired" required><br><br>
+
+      <input type="submit" name="submit" id="addGarmet-submit">
+    </div>
+
+
+    <div class="floatingBox2" id="allInventory">
+      Inventory Button <br><br>
+      <input type="submit" name="allInv" id="allInv">
+    </div>
+    <section class='response-area'>
+
+  </section>
+    <div class="lookup-floatingBox">
+
+      Item Lookup <br>
+      <label for="lookup"> Reference Number: </label>
+      <input type="text" name="lookupNum" id="lookupNum" required>
+      <button id="lookButt">Click!</button>
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
